@@ -959,10 +959,10 @@
 
 @media (max-width: 480px) {
   .hero-block__title {
-    font-size: 13px;
+    font-size: 12px;
   }
   .hero-block__title span {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 40px;
   }
   .hero-block__button {
