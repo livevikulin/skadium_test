@@ -1,0 +1,163 @@
+.service 
+    padding-top: 100px
+    padding-left: 60px
+    padding-bottom: 90px
+    width: 100%
+    &-title 
+        max-width: 716px
+        font-family: CodeProLC
+        font-size: 36px
+        line-height: normal
+        color: #000000
+        font-weight: 400
+        span 
+            font-family: CodeProBold
+    &-subtitle 
+        display: block
+        max-width: 640px
+        font-family: FuturaNew
+        font-size: 18px
+        line-height: 24px
+        color: #000000
+        margin-top: 30px
+    &-block 
+        margin-top: 45px
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        max-width: 1200px
+        &__box 
+            width: 288px
+            height: 288px
+            display: flex
+            align-items: center
+            justify-content: center
+            background: rgba(0, 0, 0, 0.6)
+            margin-right: 15px
+            margin-bottom: 15px
+            outline: none
+            position: relative
+            &:nth-child(4)
+                margin-right: 0
+            &:nth-child(8)
+                margin-right: 0
+            &:nth-child(12)
+                margin-right: 0
+            &:before 
+                position: absolute
+                content: ''
+                top: 0
+                left: 0
+                width: 9px
+                height: 100%
+                background: #FFA800
+                transition: 0.3s
+            &:hover:before
+                cursor: pointer
+                width: 100%
+                background: rgba(255, 168, 0, 0.7)
+            &:hover a  
+                color: #000000
+            img 
+                position: absolute
+                content: ''
+                top: 0
+                left: 0
+                width: 215px
+                height: 215px
+                opacity: 0.5
+                z-index: -1
+    &-box 
+        &__text 
+            display: block
+            width: 240px
+            text-align: center
+            font-family: CodeProBold
+            font-size: 20px
+            line-height: normal
+            letter-spacing: 0.1em
+            color: #FFFFFF
+            text-decoration: none
+            outline: none
+            z-index: 1
+            transition: 0.5s
+
+@media (max-width: 1600px)
+    .service 
+        padding-left: 20px
+        &-block 
+            &__box 
+                width: 215px
+                height: 215px
+        &-box 
+            &__text 
+                font-size: 14px
+                width: 180px
+
+@media (max-width: 1200px)
+    .service 
+        padding-top: 60px
+        padding-bottom: 60px
+        &-title 
+            font-size: 30px
+            max-width: 600px
+        &-block 
+            &__box 
+                width: 180px
+                height: 180px
+                img 
+                    width: 180px
+                    height: 180px
+        &-box 
+            &__text 
+                font-size: 12px
+                width: 130px
+
+@media (max-width: 991px)
+    .service 
+        &-title 
+            font-size: 24px
+            max-width: 470px
+        &-subtitle 
+            max-width: 520px
+            font-size: 16px
+            margin-top: 12px
+        &-block 
+            &__box 
+                width: 250px
+                height: 250px
+                img 
+                    width: 250px
+                    height: 250px
+                &:hover:before
+                    cursor: pointer
+                    width: 9px
+                    background: rgb(255, 168, 0)
+                &:hover a  
+                    color: #ffffff
+@media (max-width: 768px)
+    .service
+        padding: 40px 5px
+        &-title 
+            font-size: 20px
+        &-subtitle 
+            font-size: 14px
+            margin-top: 5px
+        &-block 
+            &__box 
+                width: 215px
+                height: 215px
+                img 
+                    width: 215px
+                    height: 215px
+
+@media (max-width: 480px)
+    .service
+        &-subtitle 
+            font-size: 12px
+            margin-top: 10px
+            line-height: 18px
+        &-block 
+            justify-content: center
+            &__box 
+                margin-right: 0

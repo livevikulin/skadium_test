@@ -1,0 +1,166 @@
+.blog 
+    padding: 128px 0 84px 60px
+    &-title 
+        font-family: CodeProLC
+        font-size: 48px
+        line-height: normal
+        letter-spacing: 0.05em
+        font-weight: 400
+        color: #000000
+    &-block 
+        margin-top: 67px
+    &-box 
+        position: relative
+        margin-top: 15px        
+        &__data 
+            position: absolute
+            top: 45%
+            left: -75px
+            font-family: CodeProBold
+            font-size: 24px
+            line-height: normal
+            letter-spacing: 0.1em
+            color: #FFA800
+            transform: rotate(-90deg)
+        &__info 
+            padding: 51px 0 42px 49px
+            margin-left: 38px
+            background: #353535
+            position: relative
+            &:after 
+                position: absolute
+                content: url('../img/blog/question.png')
+                top: 0
+                right: 540px
+                width: 163px
+                height: 190px
+                z-index: 0
+    &-info
+        position: relative
+        &__title 
+            font-family: CodeProBold
+            font-size: 30px
+            line-height: normal
+            letter-spacing: 0.1em
+            color: #FFFFFF
+        &__description
+            display: block
+            max-width: 867px
+            margin-top: 20px
+            font-family: FuturaNew
+            font-size: 18px
+            line-height: normal
+            color: rgba(255, 255, 255, 0.6)
+            z-index: 1
+            position: relative
+        &__list 
+            list-style: none
+            display: flex
+            margin-top: 20px
+        &__button 
+            position: absolute
+            top: 50%
+            right: 15%
+            margin-top: -29px
+            width: 61px
+            height: 58px
+            background: linear-gradient(86.25deg, #FF9292 -4.96%, #FC4444  111.72%)
+            border: none
+            outline: none
+            cursor: pointer
+    &-list 
+        margin-right: 20px
+        font-family: FuturaNew
+        font-size: 16px
+        line-height: normal
+        text-transform: uppercase
+        color: #FFFFFF
+        position: relative
+        &:after
+            position: absolute
+            content: ''
+            top: 0
+            right: -10px
+            width: 2px
+            height: 100%
+            background: #FFA800
+            transform: rotate(25deg)
+        &:last-child:after 
+            display: none
+
+@media (max-width: 1600px)
+    .blog 
+        padding: 100px 0 84px 20px
+        &-title 
+            font-size: 36px
+        &-info 
+            &__title 
+                font-size: 24px
+            &__description 
+                font-size: 16px
+                max-width: 600px
+        &-box 
+            &__info 
+                &:after 
+                    right: 185px
+
+@media (max-width: 1200px)
+    .blog 
+        padding: 60px 0 60px 20px
+        &-title 
+            font-size: 30px
+        &-block 
+            margin-top: 40px
+        &-info 
+            &__title 
+                font-size: 20px
+            &__description 
+                font-size: 12px
+                max-width: 440px
+
+@media (max-width: 991px)
+    .blog 
+        &-info 
+            &__description 
+                max-width: 300px
+        &-list 
+            font-size: 14px 
+
+@media (max-width: 768px)
+    .blog 
+        padding: 40px 5px 40px 15px
+        &-title 
+            font-size: 26px
+        &-block 
+            margin-top: 25px
+        &-box 
+            &__info 
+                padding: 30px 0 30px 30px
+                &:after 
+                    display: none
+        &-info 
+            &__button 
+                right: 5%
+        &-list 
+            font-size: 12px
+
+@media (max-width: 480px)
+    .blog 
+        padding: 40px 5px
+        &-title 
+            font-size: 20px
+        &-box 
+            &__data 
+                left: -65px
+        &-info 
+            &__title 
+                font-size: 14px
+            &__description 
+                margin-top: 10px
+                max-width: 165px
+            &__button 
+                margin-top: -63px
+                width: 49px
+                height: 126px
+        &-list 
+            font-size: 6px

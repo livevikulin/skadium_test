@@ -1,0 +1,371 @@
+.portfolio 
+    padding-top: 137px
+    padding-left: 60px
+    padding-bottom: 98px
+    width: 100%
+    &-title 
+        font-family: CodeProLC
+        font-size: 48px
+        line-height: normal
+        letter-spacing: 0.05em
+        color: #000000
+        font-weight: 400
+    &-subtitle 
+        display: block
+        max-width: 657px
+        font-family: FuturaNew
+        font-size: 18px
+        line-height: 24px
+        color: #000000
+        margin-top: 35px
+    &-block 
+        padding-top: 30px
+        display: flex
+        &__list 
+            padding-top: 32px
+            margin-right: 125px
+    &-list 
+        list-style: none
+        &__item
+            max-width: 380px
+            margin-bottom: 45px
+            a 
+                font-family: FuturaNew
+                font-size: 30px
+                line-height: 42px
+                color: #0085FF
+                font-weight: 700
+                text-decoration: none
+                outline: none
+                position: relative
+                &:after 
+                    position: absolute
+                    content: ''
+                    left: 0
+                    bottom: 0
+                    width: 100%
+                    height: 1px
+                    background: #0085FF
+                &:before 
+                    position: absolute
+                    content: ''
+                    top: 36px
+                    left: 0
+                    width: 347px
+                    height: 1px
+                    background: #0085FF
+        &__button 
+            margin-top: 30px
+            width: 308px
+            height: 78px
+            background: linear-gradient(76.19deg, #FC4444 -4.96%, #FF9292 111.72%)
+            font-family: CodeProBold
+            font-size: 18px
+            line-height: normal
+            color: #FFFFFF
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25)
+            border: none
+            outline: none
+            cursor: pointer
+            position: relative
+            &:after 
+                position: absolute
+                content: ''
+                top: 3px
+                left: 3px
+                width: 308px
+                height: 78px
+                background: #E5E5E5
+                z-index: -1
+    &-slider 
+        position: relative
+    &-arrow  
+        &__left
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 61px
+            height: 58px
+            background: linear-gradient(86.25deg, #FC4444 -4.96%, #FF9292 111.72%)
+            position: absolute
+            top: 50%
+            left: 24px
+            margin-top: -29px
+            cursor: pointer
+        &__right 
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 61px
+            height: 58px
+            background: linear-gradient(86.25deg, #FF9292 -4.96%, #FC4444 111.72%)
+            position: absolute
+            top: 50%
+            right: 24px
+            margin-top: -29px
+            cursor: pointer
+    &-info 
+        padding-top: 49px
+        &__text 
+            margin-bottom: 20px
+    &-text 
+        &__client 
+            font-family: CodeProBold
+            font-size: 18px
+            line-height: normal
+            letter-spacing: 0.05em
+            color: rgba(0, 0, 0, 0.5)
+            span 
+                font-family: FuturaNew
+                font-size: 18px
+                line-height: 24px
+                color: #000000
+        &__assessment 
+            font-family: CodeProBold
+            font-size: 18px
+            line-height: normal
+            letter-spacing: 0.05em
+            color: rgba(0, 0, 0, 0.5)
+        &__stars 
+            display: inline-block
+        &__address 
+            font-family: CodeProBold
+            font-size: 18px
+            line-height: normal
+            letter-spacing: 0.05em
+            color: rgba(0, 0, 0, 0.5)
+            span 
+                font-family: FuturaNew
+                font-size: 18px
+                line-height: 24px
+                color: #000000 
+    &-feedback 
+        margin-top: 45px
+        padding: 18px 24px
+        width: 668px
+        height: 144px
+        background: #F1F1F1
+        position: relative
+        &:before 
+            position: absolute
+            content: url('../img/portfolio/Rectangle.png')
+            top: -14px
+            left: 24px
+            width: 35px
+            height: 35px
+        &:after 
+            position: absolute
+            content: ''
+            top: -95px
+            right: -30px
+            width: 120px
+            height: 125px
+            background-image: url('../img/portfolio/like.png')
+            background-size: cover
+        &__text 
+            font-family: FuturaNew
+            font-size: 18px
+            line-height: normal
+            color: rgba(0, 0, 0, 0.5)
+
+@media (max-width: 1600px)
+    .portfolio 
+        padding-left: 20px
+        padding-top: 100px
+        &-title 
+            font-size: 36px
+        &-subtitle 
+            margin-top: 20px
+        &-list 
+            &__item 
+                a 
+                    font-size: 25px
+                    &:before 
+                        width: 290px
+                        top: 34px
+                    &:after 
+                        bottom: -5px
+        &-block 
+            &__list 
+                margin-right: 40px
+        &-slider 
+            max-width: 480px
+            &__image 
+                img 
+                    width: 480px
+        &-arrow 
+            &__right 
+                right: 55px
+        &-feedback 
+            width: 480px
+            padding: 18px 15px
+            &:after 
+                top: -35px
+                right: -30px
+                width: 70px
+                height: 72px
+            &__text 
+                font-size: 15px
+
+@media (max-width: 1200px) 
+    .portfolio 
+        padding-top: 60px
+        padding-bottom: 60px
+        &-title 
+            font-size: 30px
+        &-subtitle 
+            font-size: 14px
+        &-block 
+            &__list 
+                margin-right: 20px
+        &-list 
+            &__item 
+                max-width: 215px
+                margin-bottom: 25px
+                a 
+                    font-size: 18px
+                    &:before 
+                        width: 210px
+                        top: 25px
+            &__button 
+                margin-top: 10px
+                width: 250px
+                height: 70px
+                font-size: 16px
+                &:after 
+                    width: 250px
+                    height: 70px
+        &-slider 
+            max-width: 511px
+            &__image 
+                img 
+                    width: 511px
+        &-arrow 
+            &__right 
+                right: 23px
+        &-info 
+            padding-top: 20px
+            &__text 
+                margin-bottom: 10px
+                * 
+                    font-size: 16px
+        &-feedback 
+            margin-top: 25px
+
+@media (max-width: 991px) 
+    .portfolio 
+        &-subtitle 
+            max-width: 470px
+        &-block 
+            flex-direction: column 
+            padding-top: 0
+            &__list 
+                margin-right: 0
+                display: flex
+                flex-direction: column
+                align-items: center
+            &__info 
+                margin-top: 30px
+        &-list 
+            display: flex
+            flex-direction: row
+            &__item 
+                width: 25%
+                a 
+                    display: inline-block
+                    text-align: center
+                    font-size: 14px
+                    line-height: 18px
+                    &:before
+                        display: none
+                    &:after
+                        display: none
+        &-slider 
+            max-width: 555px
+            &__image 
+                img 
+                    width: 555px
+        &-arrow 
+            &__right 
+                right: 23px
+
+@media (max-width: 768px) 
+    .portfolio 
+        padding: 40px 5px
+        &-title 
+            font-size: 26px
+        &-subtitle 
+            font-size: 12px
+        &-list 
+            &__item 
+                a 
+                    font-size: 12px
+            &__button 
+                &:after 
+                    display: none
+        &-slider 
+            max-width: 471px
+            &__image 
+                img 
+                    width: 471px
+        &-block 
+            &__info 
+                display: flex
+                flex-direction: column
+                align-items: center
+        &-feedback 
+            width: 471px
+            &:after 
+                display: none
+
+@media (max-width: 480px) 
+    .portfolio 
+        &-title 
+            font-size: 20px
+        &-subtitle 
+            line-height: 18px
+            margin-top: 10px
+        &-list 
+            flex-direction: column
+            align-items: center
+            &__item 
+                width: 100%
+                a 
+                    font-size: 18px
+        &-slider 
+            max-width: 320px
+            &__image 
+                img 
+                    width: 310px
+        &-arrow 
+            &__left 
+                width: 40px
+                height: 40px
+                left: 12px
+                margin-top: -20px
+                img 
+                    width: 20px
+            &__right 
+                width: 40px
+                height: 40px
+                right: 12px
+                margin-top: -20px
+                img 
+                    width: 20px
+        &-text 
+            &__client 
+                font-size: 12px
+                span 
+                    font-size: 12px
+            &__assessment 
+                font-size: 12px
+            &__star 
+                img 
+                    width: 12px
+            &__address 
+                font-size: 12px
+                span
+                    font-size: 12px
+        &-feedback 
+            width: 310px
+            height: 215px

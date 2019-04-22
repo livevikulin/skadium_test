@@ -1,0 +1,231 @@
+.consultation 
+    padding-top: 63px
+    padding-left: 60px
+    padding-bottom: 55px
+    background: rgba(229, 243, 255, 0.5)
+    &-info 
+        display: inline-block
+        margin-right: 76px
+        &__title 
+            display: block
+            max-width: 697px
+            font-family: CodeProBold
+            font-size: 48px
+            line-height: normal
+            letter-spacing: 0.05em
+            color: #FFA800
+            span 
+                font-family: CodeProLC
+                font-weight: 400
+                color: #000000
+        &__subtitle 
+            display: block
+            margin-top: 29px
+            font-family: FuturaNew
+            font-size: 18px
+            line-height: 26px
+            color: #000000
+        &__specialist 
+            margin-top: 66px
+            padding-top: 18px
+            padding-bottom: 22px
+            padding-left: 163px
+            background: url('../img/consultation/specialist-bg.jpg') no-repeat
+            background-size: contain
+            position: relative
+            &:before 
+                position: absolute
+                content: ''
+                bottom: 10px
+                left: -15px
+                width: 167px
+                height: 171px
+                background-image: url('../img/consultation/specialist.png')
+                background-size: cover
+            &:after 
+                position: absolute
+                content: ''
+                bottom: -20px
+                right: 5%
+                width: 288px
+                height: 217px
+                background-image: url('../img/consultation/phone.png')
+                background-size: cover
+    &-specialist 
+        font-family: CodeProLC
+        font-size: 30px
+        line-height: normal
+        letter-spacing: 0.1em
+        color: #000000
+        &__description 
+            display: block
+            font-family: FuturaNew
+            font-size: 18px
+            line-height: 27px
+            color: #FFA800
+            font-weight: 700
+            span 
+                color: #000000
+                font-weight: 400
+    &-form 
+        display: inline-block
+        vertical-align: top
+        width: 361px
+        height: 418px
+        background: #FFFFFF
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        z-index: 1
+        form 
+            padding: 38px 41px 33px 41px
+        &__title 
+            font-family: FuturaNew
+            font-size: 18px
+            line-height: 24px
+            font-weight: 700
+            color: #000000
+            position: relative
+            &:before 
+                position: absolute
+                content: url('../img/calculation/input-phone.png')
+                top: 55px
+                left: 15%
+                width: 16px
+                height: 16px
+        &__input 
+            margin-top: 8px
+            margin-bottom: 15px
+            padding-left: 45px
+            width: 278px
+            height: 63px
+            background: rgba(76, 76, 76, 0.1)
+            border: 1px solid rgba(0, 0, 0, 0.1)
+            font-family: CodeProBold
+            font-size: 16px
+            line-height: 24px
+        &__button 
+            width: 279px
+            height: 78px
+            background: linear-gradient(77.45deg, #FC4444 -4.96%, #FF9292 111.72%)
+            margin-top: 7px
+            border: none
+            font-family: CodeProBold
+            font-size: 16px
+            line-height: normal
+            color: #FFFFFF
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25)
+            outline: none
+            cursor: pointer
+            position: relative
+            &:before 
+                position: absolute
+                content: ''
+                top: 3px
+                left: -3px
+                width: 279px
+                height: 78px
+                background: #E5E5E5
+                z-index: -1
+        &__subtitle 
+            display: block
+            margin-top: 14px
+            font-family: FuturaNew
+            font-size: 10px
+            line-height: normal
+            text-align: center
+            color: #000000
+            a 
+                color: #FFA800 
+
+@media (max-width: 1600px)
+    .consultation 
+        padding-left: 20px
+        &-info 
+            margin-right: 30px
+            &__title 
+                max-width: 510px
+                font-size: 36px
+            &__specialist 
+                max-width: 450px
+                padding-top: 15px
+                &:before
+                    bottom: 8px
+                    left: -19px
+                &:after 
+                    bottom: -50px
+                    right: -25%
+                    width: 270px
+        &-specialist 
+            font-size: 22px
+            &__description 
+                font-size: 15px
+                line-height: 15px
+
+@media (max-width: 1200px) 
+    .consultation 
+        &-info 
+            max-width: 370px
+            &__title 
+                font-size: 26px
+            &__specialist 
+                max-width: 370px
+                padding-left: 115px
+                &:before
+                    bottom: 11px
+                    left: -10px
+                    width: 112px
+                    height: 115px
+                &:after 
+                    top: -70px
+                    right: -85px
+                    width: 220px
+                    height: 150px
+        &-specialist 
+            font-size: 18px
+            &__description 
+                font-size: 11px
+                line-height: 10px
+
+@media (max-width: 991px) 
+    .consultation 
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-info 
+            margin-right: 0
+            &__specialist 
+                &:after 
+                    top: -75px
+                    right: -85px
+                    height: 135px
+
+@media (max-width: 768px) 
+    .consultation 
+        padding: 40px 5px
+
+@media (max-width: 480px) 
+    .consultation 
+        &-info 
+            margin-bottom: 20px
+            &__title 
+                font-size: 20px
+            &__subtitle 
+                margin-top: 15px
+                font-size: 14px
+                line-height: 16px
+            &__specialist
+                display: none
+        &-form 
+            width: 300px
+            &__input 
+                width: 225px
+                font-size: 14px
+            &__title 
+                &:before
+                    top: 53px
+            &__button 
+                width: 225px
+                height: 63px
+                font-size: 14px
+                &:before 
+                    display: none
+

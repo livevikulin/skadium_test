@@ -1,0 +1,149 @@
+.advantage 
+    padding: 65px 0 74px 60px
+    background: rgba(237, 236, 242, 0.5)
+    &-head 
+        padding: 38px 60px
+        width: 100%
+        max-width: 666px
+        background: #FFFFFF
+        position: relative
+        &:after 
+            position: absolute
+            content: ''
+            top: -43px
+            right: -60px
+            width: 180px
+            height: 180px
+            background-image: url('../img/advantage/glove.png')
+            background-size: cover
+        &__title 
+            font-family: CodeProLC
+            font-size: 48px
+            line-height: normal
+            letter-spacing: 0.05em
+            font-weight: 400
+            color: #000000
+    &-block 
+        padding-top: 47px
+        &__wrap
+            display: inline-block
+            vertical-align: top
+            margin-right: 103px
+            &:last-child
+                margin-right: 0
+    &-box 
+        width: 100%
+        max-width: 550px
+        padding-left: 60px
+        &:nth-child(2)
+            margin-top: 82px
+        &__title 
+            font-family: CodeProBold
+            font-size: 30px
+            line-height: normal
+            letter-spacing: 0.1em
+            color: #000000
+            position: relative
+        &__under 
+            position: absolute
+            top: -38px
+            left: -60px
+            font-family: CodeProBold
+            font-size: 96px
+            line-height: normal
+            letter-spacing: 0.1em
+            color: rgba(0, 0, 0, 0.05)
+            z-index: -1
+        &__description 
+            display: block
+            margin-top: 21px 
+            margin-left: 23px
+            font-family: FuturaNew
+            font-size: 18px
+            line-height: 24px
+            color: #000000
+            position: relative
+            &:before 
+                position: absolute
+                content: ''
+                top: 4px
+                left: -23px
+                width: 5px
+                height: 39px
+                background: #FFA800
+
+@media (max-width: 1600px)
+    .advantage 
+        padding-left: 20px
+        &-head 
+            padding: 20px 30px
+            width: 530px
+            &__title 
+                font-size: 36px
+        &-box 
+            padding-left: 30px
+            max-width: 470px
+            &:nth-child(2)
+                margin-top: 40px
+            &__title 
+                font-size: 20px
+            &__description 
+                margin-top: 10px
+                font-size: 14px
+                line-height: 20px
+                &:before 
+                    height: 31px
+            &__under
+                top: -30px
+                left: -40px
+                font-size: 70px
+        &-block  
+            &__wrap 
+                margin-right: 0
+
+@media (max-width: 1200px)
+    .advantage 
+        &-head 
+            &:after 
+                right: -50px
+                width: 160px
+                height: 160px
+            &__title 
+                font-size: 30px
+        &-block 
+            padding-top: 40px
+            &__wrap 
+                max-width: 395px
+        &-box 
+            padding-left: 25px
+
+@media (max-width: 991px)
+    .advantage 
+        &-block 
+            &__wrap
+                &:last-child
+                    margin-top: 40px
+
+@media (max-width: 768px)
+    .advantage 
+        padding: 40px 5px
+        &-head 
+            width: 440px
+        &-box 
+            &__under 
+                display: none
+
+@media (max-width: 768px)
+    .advantage 
+        &-head 
+            padding: 15px 25px
+            width: 310px
+            &:after 
+                display: none
+            &__title
+                font-size: 20px
+        &-box 
+            &__title
+                font-size: 18px
+            &__description 
+                font-size: 10px

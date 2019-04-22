@@ -1,0 +1,221 @@
+.header
+    display: flex
+    &-main 
+        padding-left: 60px
+        padding-top: 31px
+    &-block 
+        display: flex
+    &-box 
+        &__text 
+            display: block
+            max-width: 325px
+            font-family: FuturaNew
+            font-size: 18px
+            line-height: 24px
+            color: #000000
+        &__city 
+            display: block
+            margin-top: 10px
+            font-family: FuturaNew
+            font-size: 18px
+            line-height: 24px
+            color: #BABABA
+            a 
+                position: relative
+                outline: none
+                margin-left: 5px
+                color: #F85757
+                &:before
+                    position: absolute
+                    content: url('../img/header/Polygon.png')
+                    top: -15%
+                    right: -10px
+                    width: 7px
+                    height: 4px
+    &-search
+        margin-left: 48px
+        position: relative
+        &__input 
+            padding: 12px 68px 14px 63px
+            text-align: center
+            font-family: FuturaNew
+            font-size: 18px
+            color: #BABABA
+            border: 1px solid rgba(0, 0, 0, 0.1)
+        &__button
+            position: absolute
+            top: 14px
+            left: 20px
+            outline: none
+            text-decoration: none
+    &-phone 
+        margin-left: 48px
+        &__timetable
+            display: block
+            font-family: FuturaNew
+            font-size: 18px
+            line-height: 24px
+            color: #BABABA
+        &__number 
+            font-family: CodeProLC
+            font-size: 24px
+            color: #000000
+            margin-top: 10px
+            outline: none
+            text-decoration: none
+    &-button 
+        padding: 17px 18px 17px 65px
+        width: 217px
+        height: 47px
+        background: linear-gradient(73.96deg, #FC4444 -4.96%, #FF9292 111.72%)
+        border: none
+        margin-left: 45px
+        font-family: CodeProBold
+        font-size: 14px
+        line-height: normal
+        color: #FFFFFF
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25)
+        outline: none
+        cursor: pointer
+        position: relative
+        &:after 
+            position: absolute
+            content: ''
+            top: 8px
+            left: -3px
+            width: 217px
+            height: 43px
+            background: #E5E5E5
+            z-index: -1
+        &:before 
+            position: absolute
+            content: ''
+            top: -51px
+            left: -60px
+            width: 154px
+            height: 116px
+            background-image: url('../img/header/Scene_1.png')
+            background-size: cover
+
+@media (max-width: 1600px)
+    .header
+        &-main 
+            padding-left: 20px
+        &-search 
+            margin-left: 0
+            &__input 
+                padding: 12px 15px
+        &-phone 
+            width: 160px
+            margin-left: 20px
+            &__timetable 
+                font-size: 13px
+            &__number 
+                font-size: 16px
+        &-button 
+            margin-left: 20px
+            padding: 17px 0 17px 35px
+            width: 185px
+            font-size: 12px
+            &:after 
+                width: 185px            
+        &-box 
+            &__text 
+                font-size: 15px
+            &__city 
+                font-size: 15px
+
+@media (max-width: 1200px) 
+    .header 
+        &-box 
+            &__text 
+                font-size: 12px
+                line-height: 18px
+                max-width: 240px
+            &__city 
+                margin-top: 5px
+        &-search 
+            &__input 
+                padding: 8px 0
+            &__button
+                top: 12px
+                left: 10px
+                img 
+                    width: 15px
+        &-phone 
+            width: 135px
+            margin-left: 15px
+            &__timetable 
+                font-size: 10px
+                line-height: 16px
+            &__number 
+                font-size: 14px
+
+@media (max-width: 991px)  
+    .header 
+        &-search 
+            display: none
+        &-button 
+            width: 145px
+            height: 40px
+            font-size: 10px
+            padding: 0
+            &:after 
+                top: 4px
+                width: 145px
+                height: 40px
+            &:before 
+                display: none
+
+@media (max-width: 768px) 
+    .header 
+        flex-direction: column
+        width: 100%
+        max-width: 768px
+        margin: auto
+        &-main 
+            padding-left: 5px
+            padding-right: 5px
+        &-block 
+            justify-content: center
+        &-box 
+            &__text 
+                font-size: 11px
+        &-phone 
+            &__number 
+                font-size: 12px
+        &-button 
+            width: 130px
+            &:after
+                display: none
+
+@media (max-width: 480px) 
+    .header 
+        &-block
+            flex-direction: column
+            align-items: center
+        &-box 
+            &__text 
+                font-size: 14px
+                max-width: 255px
+        &-phone 
+            width: 147px
+            margin-left: 0
+            margin-top: 15px
+            &__timetable 
+                font-size: 12px 
+            &__number 
+                font-size: 16px
+        &-button 
+            margin-left: 0
+            margin-top: 15px
+
+
+
+
+
+
+
+
+
+

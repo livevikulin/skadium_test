@@ -1,0 +1,238 @@
+.footer 
+    padding-left: 60px
+    &-header 
+        padding-top: 41px
+        padding-bottom: 43px
+        display: flex
+        align-items: center
+        &__logo 
+            display: inline-block
+            min-width: 60px
+            height: 60px
+            border-radius: 50%
+            background: linear-gradient(90deg, #FFB900 -6.82%, #F85757 109.09%)
+            margin-right: 36px
+        &__social 
+            display: inline-block
+            margin-right: 95px
+    &-social 
+        &__text 
+            font-family: FuturaNew
+            font-size: 18px
+            line-height: 24px
+            color: #BABABA
+        &__box 
+            margin-top: 13px
+            display: flex
+    &-box 
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 30px
+        height: 30px
+        border: 1px solid #BABABA
+        text-decoration: none
+        margin-right: 20px
+        outline: none
+        &:last-child 
+            margin-right: 0
+        &:hover 
+            border: 1px solid #F85757
+    &-search
+        display: inline-block
+        margin-right: 60px
+        position: relative
+        &__input 
+            padding: 12px 68px 14px 63px
+            text-align: center
+            font-family: FuturaNew
+            font-size: 18px
+            color: #BABABA
+            border: 1px solid rgba(0, 0, 0, 0.1)
+        &__button
+            position: absolute
+            top: 14px
+            left: 20px
+            outline: none
+            text-decoration: none
+    &-phone 
+        display: inline-block
+        margin-right: 43px
+        &__timetable
+            display: block
+            font-family: FuturaNew
+            font-size: 18px
+            line-height: 24px
+            color: #BABABA
+        &__number 
+            font-family: CodeProLC
+            font-size: 24px
+            color: #000000
+            margin-top: 10px
+            outline: none
+            text-decoration: none
+    &-button 
+        width: 221px
+        height: 65px
+        background: linear-gradient(78.05deg, #FC4444 -4.96%, #FF9292 111.72%)
+        font-family: CodeProBold
+        font-size: 16px
+        line-height: normal
+        color: #FFFFFF
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25)
+        border: none
+        outline: none
+        cursor: pointer
+        position: relative
+    &-under 
+        padding-top: 41px
+        padding-bottom: 40px
+        position: relative
+        &:before 
+            position: absolute  
+            content: ''
+            top: 0
+            right: 0
+            width: 100%
+            height: 1px
+            background: #F1F1F1
+        &__text 
+            font-family: FuturaNew
+            font-size: 16px
+            line-height: normal
+            color: #000000
+        &__info 
+            display: block
+            margin-top: 7px
+            font-family: FuturaNew
+            font-size: 16px
+            line-height: normal
+            color: #000000
+            a 
+                text-decoration: none
+                position: relative
+                color: #FFA800
+                outline: none
+                &:before 
+                    position: absolute
+                    content: ''
+                    width: 100%
+                    height: 1px
+                    bottom: 0
+                    left: 0
+                    background: #FFA800
+
+@media (max-width: 1600px)
+    .footer 
+        padding-left: 20px
+        &-search 
+            margin-right: 20px
+            &__input
+                padding: 12px 15px
+        &-header 
+            &__logo 
+                margin-right: 20px
+            &__social 
+                margin-right: 40px
+        &-phone 
+            width: 150px
+            margin-right: 15px
+            &__timetable 
+                font-size: 13px
+            &__number 
+                font-size: 16px
+
+@media (max-width: 1200px)
+    .footer 
+        &-header 
+            &__logo 
+                min-width: 30px
+                height: 30px
+            &__social 
+                margin-right: 20px
+        &-social 
+            &__text 
+                font-size: 12px
+                line-height: 0
+        &-search 
+            margin-right: 15px
+            &__input 
+                padding: 8px 0
+            &__button
+                top: 12px
+                left: 10px
+                img 
+                    width: 15px
+        &-phone 
+            width: 135px
+            margin-left: 15px
+            &__timetable 
+                font-size: 10px
+                line-height: 16px
+            &__number 
+                font-size: 14px
+        &-button 
+            width: 170px
+            height: 50px
+            font-size: 14px
+        &-under 
+            *
+                font-size: 14px
+
+@media (max-width: 991px) 
+    .footer 
+        &-search 
+            display: none
+        &-under 
+            * 
+                font-size: 10px
+
+@media (max-width: 768px) 
+    .footer
+        padding: 0 5px
+        &-social 
+            &__box 
+                margin-top: 5px
+        &-box 
+            margin-right: 5px
+        &-phone 
+            margin-left: 0
+            &__number 
+                font-size: 12px
+        &-header 
+            justify-content: center
+        &-under 
+            * 
+                font-size: 8px
+
+@media (max-width: 480px) 
+    .footer 
+        &-header 
+            flex-direction: column
+            align-items: center
+            &__logo 
+                display: none
+            &__social 
+                margin-right: 0
+                margin-bottom: 15px
+        &-social 
+            &__text
+                display: block
+                margin-bottom: 15px
+                text-align: center
+                font-size: 14px
+        &-box 
+            margin-right: 15px
+        &-phone 
+            margin-right: 0
+            margin-bottom: 15px
+            &__timetable 
+                font-size: 12px
+            &__number 
+                font-size: 14px
+        &-under 
+            padding-top: 15px
+            padding-bottom: 30px
+            * 
+                font-size: 5px
+
