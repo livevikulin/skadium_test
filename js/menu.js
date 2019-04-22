@@ -2,6 +2,5 @@ $(document).ready(function(){
     $(".hamburger").click(function(){
         $(this).toggleClass('is-active');
         $('.menu').toggleClass('menu-active');
-        $('.content').toggleClass('content-block');
     });
 });
